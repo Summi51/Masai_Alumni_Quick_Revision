@@ -8,6 +8,11 @@ body {
     font-family: sans-serif;
 }
 
+.main{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
 .wrapper {
     position: absolute;
     top: 50%;
