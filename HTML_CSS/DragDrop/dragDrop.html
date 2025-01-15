@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dragDrop.css" />
+  </head>
+  <body>
+    <div class="maincontainer" id="maincontainer">
+      <div class="dragable" draggable="true">item1</div>
+      <div class="dragable" draggable="true">item2</div>
+      <div class="dragable" draggable="true">item3</div>
+      <div class="dragable" draggable="true">item4</div>
+      <div class="dragable" draggable="true">item5</div>
+    </div>
+  </body>
+</html>
+<script>
+  const deagablles = document.querySelectorAll(".dragable");
+  const container = document.getElementById("maincontainer");
+  deagablles.forEach((ele) => {
+    ele.addEventListener("dragstart", dragStart);
+    ele.addEventListener("dragend", dragEnd);
+  });
+
+  container.addEventListener("dragover", dragOver);
+  container.addEventListener("drop", drop);
+  function dragStart(event) {
+    event.dataTransfer.setData("text", event.target.textContent);
+    event.target.classList.add("dragging");
+  }
+  function dragEnd(event) {
+    event.target.classList.remove("dragging");
+  }
+  function dragOver(event) {
+    event.preventDefault();
+    const dragitem = document.querySelector(".dragging");
+    if (event.target !== dragitem && event.target !== container) {
+      event.target.classList.add("drag-over");
+    }
+  }
+  function drop(event) {
+    event.preventDefault();
+    const dragitem = document.querySelector(".dragging");
+    if (event.target !== dragitem && event.target !== container) {
+      event.target.classList.remove("drag-over");
+      const dragtext = event.dataTransfer.getData("text");
+      const targetText = event.target.textContent;
+      event.target.textContent = dragtext;
+      dragitem.textContent = targetText;
+    }
+  }
+</script>

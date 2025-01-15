@@ -1,0 +1,22 @@
+.maincontainer {
+    margin: auto;
+    border: 1px solid blue;
+    height: 500px;
+    width: 400px;
+  }
+  .maincontainer div {
+    width: auto;
+    height: 100px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  /* .maincontainer div.drag-over {
+    background-color: lightcyan;
+  } */
+  .dragging {
+    background-color: lightgray;
+    opacity: 0.6;
+  }
