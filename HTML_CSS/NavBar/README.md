@@ -11,15 +11,15 @@ This project implements a responsive navigation bar featuring a dropdown menu an
 
 ## Demo
 
-*Desktop view showcasing the full navigation bar.*
+*Desktop view showcasing the full navigation bar*
 
 ![alt text](<Screenshot 2025-01-15 at 7.54.32 AM.png>)
 
 ![alt text](<Screenshot 2025-01-15 at 7.56.20 AM.png>)
 
-*Mobile view with the hamburger menu and logo.*
+*Mobile view with the hamburger menu and logo*
 
-![alt text](<Screenshot 2025-01-15 at 7.55.15 AM.png>)
+![Uploading Screenshot 2025-01-15 at 8.13.17 AM.png…]()
 
 ![alt text](<Screenshot 2025-01-15 at 7.55.29 AM.png>) 
 
@@ -27,4 +27,4 @@ This project implements a responsive navigation bar featuring a dropdown menu an
 
 **Clone the repository:**
 
-   git clone https://github.com/your_username/your_repository.git
+   git clone https://github.com/Summi51/Masai_Alumni_Quick_Revision/tree/main/HTML_CSS/NavBar
