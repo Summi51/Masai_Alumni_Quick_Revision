@@ -32,4 +32,4 @@ Dragging an item to reorder.
 
 Reordered list with updated positions.
 
-Note: ![alt text](<Screenshot 2025-01-15 at 8.43.02 AM.png>) and ![alt text](<Screenshot 2025-01-15 at 8.43.41 AM.png>) with the actual paths to your screenshot images.
+Note: ![alt text](<Screenshot 2025-01-15 at 8.43.02 AM.png>) and ![alt text](<Screenshot 2025-01-15 at 8.43.41 AM.png>) with the current updated paths to your screenshot images.
