@@ -21,7 +21,7 @@ This project implements a responsive navigation bar featuring a dropdown menu an
 
 <img width="351" alt="Screenshot 2025-01-15 at 8 13 17 AM" src="https://github.com/user-attachments/assets/53dabd3c-c3b1-44e6-bfed-66388dee7b19" />
 
-![alt text](<Screenshot 2025-01-15 at 7.55.29 AM.png>) 
+<img width="341" alt="Screenshot 2025-01-15 at 8 13 44 AM" src="https://github.com/user-attachments/assets/bfda85e8-b833-4d8d-8ad0-4b834574b553" /> 
 
 ## Installation
 
