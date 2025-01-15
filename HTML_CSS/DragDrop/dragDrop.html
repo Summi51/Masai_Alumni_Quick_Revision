@@ -1,54 +1,42 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="dragDrop.css" />
-  </head>
-  <body>
-    <div class="maincontainer" id="maincontainer">
-      <div class="dragable" draggable="true">item1</div>
-      <div class="dragable" draggable="true">item2</div>
-      <div class="dragable" draggable="true">item3</div>
-      <div class="dragable" draggable="true">item4</div>
-      <div class="dragable" draggable="true">item5</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Element | CodingNepal</title>
+    <link rel="stylesheet" href="dragDrop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
+</head>
+<body>
+  <div class="drag-container">
+    <div class="drag-item">
+      <span class="drag-text">Item 1</span>
+      <i class="fas fa-bars"></i>
     </div>
-  </body>
+    <div class="drag-item">
+      <span class="drag-text">Item 2</span>
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="drag-item">
+      <span class="drag-text">Item 3</span>
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="drag-item">
+      <span class="drag-text">Item 4</span>
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="drag-item">
+      <span class="drag-text">Item 5</span>
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+  <script>
+    const dragArea = document.querySelector(".drag-container");
+    new Sortable(dragArea, {
+      animation: 350
+    });
+  </script>
+</body>
 </html>
-<script>
-  const deagablles = document.querySelectorAll(".dragable");
-  const container = document.getElementById("maincontainer");
-  deagablles.forEach((ele) => {
-    ele.addEventListener("dragstart", dragStart);
-    ele.addEventListener("dragend", dragEnd);
-  });
-
-  container.addEventListener("dragover", dragOver);
-  container.addEventListener("drop", drop);
-  function dragStart(event) {
-    event.dataTransfer.setData("text", event.target.textContent);
-    event.target.classList.add("dragging");
-  }
-  function dragEnd(event) {
-    event.target.classList.remove("dragging");
-  }
-  function dragOver(event) {
-    event.preventDefault();
-    const dragitem = document.querySelector(".dragging");
-    if (event.target !== dragitem && event.target !== container) {
-      event.target.classList.add("drag-over");
-    }
-  }
-  function drop(event) {
-    event.preventDefault();
-    const dragitem = document.querySelector(".dragging");
-    if (event.target !== dragitem && event.target !== container) {
-      event.target.classList.remove("drag-over");
-      const dragtext = event.dataTransfer.getData("text");
-      const targetText = event.target.textContent;
-      event.target.textContent = dragtext;
-      dragitem.textContent = targetText;
-    }
-  }
-</script>
