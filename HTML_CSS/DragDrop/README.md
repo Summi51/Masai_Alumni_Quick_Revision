@@ -12,7 +12,7 @@ A simple and intuitive drag-and-drop list implemented using HTML, CSS, and JavaS
 
 1. **Clone the Repository:**
 
-   git clone https://github.com/your-username/drag-and-drop-list.git
+   git clone https://github.com/Summi51/Masai_Alumni_Quick_Revision/tree/main/HTML_CSS/DragDrop
 
 2. **Navigate to the Project Directory:**
 
@@ -28,8 +28,8 @@ Below are some screenshots demonstrating the drag-and-drop functionality:
 
 Dragging an item to reorder.
 
-![alt text](<Screenshot 2025-01-15 at 8.42.14 AM.png>)
+<img width="1230" alt="Screenshot 2025-01-15 at 8 52 58 AM" src="https://github.com/user-attachments/assets/1cf55ea8-a2ea-43cd-b9d1-345cd2869fa0" />
 
 Reordered list with updated positions.
 
-Note: ![alt text](<Screenshot 2025-01-15 at 8.43.02 AM.png>) and ![alt text](<Screenshot 2025-01-15 at 8.43.41 AM.png>) with the actual paths to your screenshot images.
+Note: ![alt text](<Screenshot 2025-01-15 at 8.43.02 AM.png>) and ![alt text](<Screenshot 2025-01-15 at 8.43.41 AM.png>) with the current updated paths to your screenshot images.
