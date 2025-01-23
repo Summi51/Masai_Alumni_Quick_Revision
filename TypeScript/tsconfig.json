@@ -1,7 +1,24 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "strict": true
-  }
+    "target": "ES2015",                    // Set the target version of JavaScript
+    "lib": ["ES2015", "DOM"],              // Include ES2015 and DOM libraries
+    "module": "commonjs",                  // Use CommonJS module system (for Node.js)
+    "moduleResolution": "node",            // Resolve modules using Node.js style
+    "strict": true,                        // Enable strict type-checking options
+    "esModuleInterop": true,               // Enable interop with ES modules
+    "skipLibCheck": true,                  // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,  // Enforce consistent file naming conventions
+    "noImplicitAny": true,                 // Prevent variables from being inferred as `any` type
+    "outDir": "./dist",                    // Output directory for compiled JavaScript files
+    "rootDir": "./src",                    // Root directory of your source code
+    "resolveJsonModule": true,             // Allow importing `.json` files
+    "removeComments": true,                // Remove comments from the output
+    "noEmit": false                        // Emit output files (set to `true` to disable output)
+  },
+  "include": [
+  "*.ts"  
+],
+  "exclude": [
+    "node_modules"                         // Exclude `node_modules` directory from compilation
+  ]
 }
