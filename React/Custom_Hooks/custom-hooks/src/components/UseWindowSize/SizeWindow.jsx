@@ -1,3 +1,8 @@
+// useWindowSize
+// Problem Statement: Create a useWindowSize hook that tracks the browser window’s dimensions. 
+// The hook should update the width and height values dynamically when the window is resized.
+
+
 import React from "react";
 import useWindowSize from "./useWindowSize";
 
